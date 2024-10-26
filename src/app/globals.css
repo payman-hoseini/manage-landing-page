@@ -2,20 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@font-face {
+  font-family: "Vietnam";
+  font-weight: 400;
+  src: url(./../../public/fonts/BeVietnamPro-Regular.ttf);
+}
+@font-face {
+  font-family: "Vietnam";
+  font-weight: 500;
+  src: url(./../../public/fonts/BeVietnamPro-Medium.ttf);
+}
+@font-face {
+  font-family: "Vietnam";
+  font-weight: 700;
+  src: url(./../../public/fonts/BeVietnamPro-Bold.ttf);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.desBack {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1439' height='360'%3E%3Cg fill='%23FFF0EC' fill-rule='evenodd' opacity='.071' transform='translate(-171 -373)'%3E%3Crect width='310.431' height='708' x='205' y='410' rx='155.215' transform='scale(1 -1) rotate(-45 -1484.244 0)'/%3E%3Crect width='310.431' height='708' x='1269' y='7' rx='155.215' transform='scale(1 -1) rotate(-45 552.684 0)'/%3E%3C/g%3E%3C/svg%3E");
 }
