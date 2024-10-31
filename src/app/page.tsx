@@ -68,10 +68,11 @@ export default function Home() {
               </div>
           </div>
         </div>
-        <div className="grid place-items-center">
+      </main>
+      <div className="grid place-items-center">
           <p className="text-center mt-32 text-4xl font-Vietnam font-bold text-Dark-Blue">What they’ve said</p>
           <div className="mt-28 grid grid-cols-3 gap-x-8">
-            <div className="bg-Very-Light-Gray rounded grid place-items-center font-Vietnam ">
+            <div className="bg-Very-Light-Gray rounded grid place-items-center font-Vietnam pb-8">
               <div className="-mt-12">
                 <Image src={Anisha} alt="Anisha" className="w-24"/>
               </div>
@@ -79,7 +80,7 @@ export default function Home() {
               <p className="text-Dark-Grayish-Blue text-center px-5">“Manage has supercharged our team’s workflow. The ability to maintain 
               visibility on larger milestones at all times keeps everyone motivated.”</p>
             </div>
-            <div className="bg-Very-Light-Gray rounded grid place-items-center font-Vietnam ">
+            <div className="bg-Very-Light-Gray rounded grid place-items-center font-Vietnam pb-8">
               <div className="-mt-12">
                 <Image src={Bravo} alt="Bravo" className="w-24"/>
               </div>
@@ -87,7 +88,7 @@ export default function Home() {
               <p className="text-Dark-Grayish-Blue text-center px-5">“We have been able to cancel so many other subscriptions since using Manage. There is no more cross-channel confusion and everyone is much more focused.”
               </p>
             </div>
-            <div className="bg-Very-Light-Gray rounded grid place-items-center font-Vietnam ">
+            <div className="bg-Very-Light-Gray rounded grid place-items-center font-Vietnam pb-8">
               <div className="-mt-12">
                 <Image src={Shanai} alt="Shanai" className="w-24"/>
               </div>
@@ -96,8 +97,11 @@ export default function Home() {
             </div>
           </div>
           <button className="bg-Bright-Red text-sm font-medium text-white px-10 py-4 rounded-full shadow-xl shadow-Very-Pale-Red mt-10">Get Started</button>
-        </div>
-      </main>
+      </div>
+      <div className="mt-40 bg-Bright-Red font-Vietnam pb-8 pt-4 flex justify-between items-baseline px-20">
+          <p className="text-white font-medium text-4xl w-[40%]">Simplify how your team works today.</p>
+          <button className="bg-white text-sm font-bold text-Bright-Red px-10 py-4 rounded-full shadow-xl mt-10">Get Started</button>
+      </div>
     </>
   );
 }
