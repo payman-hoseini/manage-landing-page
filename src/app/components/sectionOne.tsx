@@ -1,6 +1,6 @@
 export default function SectionOne(){
     return (
-        <div className="flex flex-col-reverse lg:flex-row items-center lg:items-start lg:justify-between font-Vietnam mt-20">
+        <div className="flex flex-col-reverse lg:flex-row items-center lg:items-start lg:justify-between font-Vietnam md:mt-20">
           <div className="lg:mr-28 basis-1/2 text-center lg:text-left">
               <p className="lg:text-6xl text-4xl font-bold text-Dark-Blue">Bring everyone together to build better products.</p>
               <p className="my-10 text-Dark-Grayish-Blue lg:w-[60%] px-10 lg:px-0">Manage makes it simple for software teams to plan day-to-day 
