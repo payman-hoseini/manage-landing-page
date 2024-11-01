@@ -7,7 +7,7 @@ export default function SectionTwo(){
             the complexity. Our software is tailor-made for modern digital 
             product teams.</p>
       </div>
-      <div className="basis-1/2 mt-10 md:mt-0">
+      <div className="basis-1/2 mt-10 md:mt-0 pl-5 md:pl-0">
           <div className="flex items-baseline">
             <div className="bg-Bright-Red px-5 text-white font-medium rounded-full text-sm py-2 z-50">01</div>
             <div className="ml-5 mt-2">
