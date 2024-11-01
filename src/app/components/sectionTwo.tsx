@@ -2,8 +2,8 @@ export default function SectionTwo(){
     return (
     <div className="mt-16 font-Vietnam flex flex-col md:flex-row justify-between">
       <div className="basis-1/2 lg:mr-28 md:mr-5 text-center md:text-left">
-          <p className="text-5xl font-bold text-Dark-Blue">What’s different about Manage?</p>
-          <p className="text-Dark-Grayish-Blue mt-10 lg:w-[60%]">Manage provides all the functionality your team needs, without 
+          <p className="lg:text-5xl text-3xl font-bold text-Dark-Blue">What’s different about Manage?</p>
+          <p className="text-Dark-Grayish-Blue mt-10 lg:w-[60%] px-10 lg:px-0">Manage provides all the functionality your team needs, without 
             the complexity. Our software is tailor-made for modern digital 
             product teams.</p>
       </div>
