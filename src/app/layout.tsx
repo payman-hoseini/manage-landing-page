@@ -14,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="pattern">
+      <body className="pattern patternTwo">
         {children}
       </body>
     </html>

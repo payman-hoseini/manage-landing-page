@@ -1,6 +1,6 @@
 export default function SectionTwo(){
     return (
-    <div className="mt-16 font-Vietnam flex justify-between">
+    <div className="mt-16 font-Vietnam flex flex-col md:flex-row justify-between">
       <div className="basis-1/2 mr-28">
           <p className="text-5xl font-bold text-Dark-Blue">What’s different about Manage?</p>
           <p className="text-Dark-Grayish-Blue mt-10 w-[60%]">Manage provides all the functionality your team needs, without 

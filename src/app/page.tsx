@@ -7,7 +7,7 @@ import SectionTwo from "./components/sectionTwo";
 export default function Home() {
   return (
     <>
-      <main className="container mx-auto patternTwo pb-32">
+      <main className="container mx-auto pb-32">
         <Header />
         <SectionOne />
         <SectionTwo />
