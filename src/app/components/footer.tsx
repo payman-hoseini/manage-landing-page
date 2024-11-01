@@ -1,4 +1,21 @@
+'use client'
+
+import { useState } from "react"
+
 export default function Footer (){
+    const [email , setEmail] = useState("")
+    const [error , setError] = useState(false)
+    function inputHandler(e : React.ChangeEvent<HTMLInputElement>){
+        setEmail(e.target.value)
+    }
+    function checkEmail(){
+        if(email == "" || email.indexOf('@') < 1 || !email.includes('.')){
+            setError(true)
+        }
+        else{
+            setError(false)
+        }
+    }
     return (
         <>
             <div className="desBack mt-40 bg-Bright-Red font-Vietnam pb-12 pt-8 flex justify-between items-baseline px-20">
@@ -46,11 +63,14 @@ export default function Footer (){
                     </ul>
                 </div>
                 <div>
-                    <div>
-                        <input type="email" placeholder="Updates in your inbox..." className="font-Vietnam py-3 pl-4 pr-8 rounded-full text-sm outline-none"/>
-                        <button className="bg-Bright-Red ml-3 text-white py-3 px-4 rounded-full text-sm">Go</button>
+                    <div className="flex items-start">
+                        <div>
+                            <input onChange={inputHandler} type="email" placeholder="Updates in your inbox..." className={`font-Vietnam py-3 pl-4 pr-8 rounded-full text-sm border outline-none ${error ? "border-Bright-Red text-Bright-Red" : "border-transparent"}`}/>
+                           {error && <p className="font-Vietnam italic text-Bright-Red text-xs pl-4 mt-1">Please insert a valid email</p>}
+                        </div>
+                        <button onClick={checkEmail} className="bg-Bright-Red ml-3 text-white py-3 px-4 rounded-full text-sm">Go</button>
                     </div>
-                    <p className="text-Dark-Grayish-Blue text-sm mt-20">Copyright 2020. All Rights Reserved</p>
+                    <p className="text-Dark-Grayish-Blue text-sm mt-14">Copyright 2020. All Rights Reserved</p>
                 </div>
             </div>
         </>
